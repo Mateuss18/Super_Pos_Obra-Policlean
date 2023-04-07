@@ -1,3 +1,5 @@
+@use "../../../styles/mixins.scss";
+
 .section-benefits {
   background-image: url(./assets/96686892_l.jpg);
   background-size: cover;
@@ -15,9 +17,26 @@
       border-radius: 8px;
       color: #fff;
 
+      @include mixins.laptop-G {
+        padding: 50px 60px;
+      }
+
+      @include mixins.laptop {
+        width: 100%;
+      }
+
+      @include mixins.mobile-G {
+        padding: 35px 30px;
+      }
+
       h2 {
         margin-bottom: 20px;
         font-size: 32px;
+
+        @include mixins.laptop {
+          margin-bottom: 40px;
+          font-size: 26px;
+        }
       }
 
       .benefits {
@@ -28,11 +47,20 @@
         .benefit {
           display: flex;
           gap: 30px;
+          align-items: center;
+
+          @include mixins.tablet {
+            gap: 20px;
+          }
 
           p {
             color: #e4e4e4;
             line-height: 22px;
             font-size: 17px;
+
+            @include mixins.mobile-G {
+              font-size: 14px;
+            }
           }
         }
       }
