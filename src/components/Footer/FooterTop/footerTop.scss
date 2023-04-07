@@ -1,0 +1,145 @@
+.footer-top {
+  background: #004c98;
+  color: #fff;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-block: 35px;
+    gap: 20px;
+
+    li b,
+    .title {
+      display: block;
+      color: #80bad4;
+      margin-bottom: 4px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .col-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img:nth-child(1) {
+          width: 260px;
+          margin-bottom: 40px;
+        }
+
+        img:last-child {
+          width: 205px;
+        }
+
+        .slogan {
+          font-size: 15px;
+          font-weight: 600;
+          margin-bottom: 50px;
+
+          span {
+            padding-bottom: 3px;
+            border-bottom: 2px solid #ffffff;
+          }
+        }
+
+        .social {
+          margin-bottom: 30px;
+
+          p {
+            text-align: center;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+          }
+
+          .images {
+            display: flex;
+            gap: 10px;
+            padding: 12px 16px;
+            border: solid 1px #fff;
+            border-radius: 8px;
+          }
+        }
+      }
+
+      .lists {
+        display: flex;
+
+        .list {
+          display: flex;
+          flex-direction: column;
+          gap: 17px;
+          width: 298px;
+
+          &-1 {
+            li:last-child a {
+              text-decoration: underline;
+              padding-bottom: 5px;
+            }
+          }
+
+          &-3 {
+            width: 350px;
+
+            li a {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+            }
+          }
+        }
+
+        li a {
+          color: #ececec;
+        }
+      }
+
+      .col-3 {
+        .title {
+          margin-bottom: 15px;
+        }
+
+        .payments {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          width: 210px;
+          margin-bottom: 20px;
+        }
+
+        .deliveries {
+          display: flex;
+          gap: 9px;
+
+          img {
+            width: 75px;
+            height: 40px;
+          }
+        }
+      }
+    }
+
+    .divisor {
+      margin-top: 10px;
+      height: 1px;
+      width: 100%;
+      background-color: #c7c7c7;
+    }
+
+    .security-seals {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      img {
+        width: 340px;
+      }
+    }
+  }
+}
