@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+li,
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: min(105.625rem, 100%);
+  margin-inline: auto;
+  padding-inline: 1.5625rem;
+}
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  height: 70px;
+  letter-spacing: 0.3px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfield;
+}
