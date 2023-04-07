@@ -104,27 +104,31 @@ const Product = () => {
                 <b>Frete e prazo de entrega</b>
               </div>
               <form className="shipping-input" action="">
-                <input type="number" />
+                <input type="number" placeholder="Insira o CEP" />
                 <button className="btn submit" type="submit">
                   Calcular
                 </button>
               </form>
-              <table cellspacing="0" cellpadding="0">
-                <tr>
-                  <th>Frete</th>
-                  <th>Valor</th>
-                  <th>Prazo</th>
-                </tr>
-                <tr>
-                  <td className="upper">Correiros pac</td>
-                  <td>R$ 22,49</td>
-                  <td>5 a 6 dias úteis.</td>
-                </tr>
-                <tr>
-                  <td className="upper">Correiros sedex</td>
-                  <td>R$ 31,72</td>
-                  <td>2 a 3 dias úteis.</td>
-                </tr>
+              <table cellSpacing="0" cellPadding="0">
+                <thead>
+                  <tr>
+                    <th>Frete</th>
+                    <th>Valor</th>
+                    <th>Prazo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="upper">Correiros pac</td>
+                    <td>R$ 22,49</td>
+                    <td>5 a 6 dias úteis.</td>
+                  </tr>
+                  <tr>
+                    <td className="upper">Correiros sedex</td>
+                    <td>R$ 31,72</td>
+                    <td>2 a 3 dias úteis.</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>

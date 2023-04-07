@@ -1,5 +1,7 @@
 .product-section {
   .wrapper {
+    padding-block: 21px;
+
     .breadcrumb ul {
       display: flex;
       gap: 3px;
@@ -215,14 +217,21 @@
           table {
             width: 100%;
             border: none;
-
-            tr:nth-child(odd) {
-              background-color: #dedede;
-            }
-            tr:nth-child(even) {
-              background-color: #f4f4f4;
+            thead {
+              th {
+                background-color: #dedede;
+              }
             }
 
+            tbody {
+              tr:nth-child(odd) {
+                background-color: #f4f4f4;
+              }
+
+              tr:nth-child(even) {
+                background-color: #dedede;
+              }
+            }
             tr {
               td,
               th {
