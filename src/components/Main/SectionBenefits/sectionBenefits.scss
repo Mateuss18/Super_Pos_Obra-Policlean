@@ -1,0 +1,41 @@
+.section-benefits {
+  background-image: url(./assets/96686892_l.jpg);
+  background-size: cover;
+  background-position: center;
+
+  .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-block: 115px;
+
+    .container {
+      width: 43%;
+      padding: 70px 90px;
+      background-color: #004c98;
+      border-radius: 8px;
+      color: #fff;
+
+      h2 {
+        margin-bottom: 20px;
+        font-size: 32px;
+      }
+
+      .benefits {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .benefit {
+          display: flex;
+          gap: 30px;
+
+          p {
+            color: #e4e4e4;
+            line-height: 22px;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+}
