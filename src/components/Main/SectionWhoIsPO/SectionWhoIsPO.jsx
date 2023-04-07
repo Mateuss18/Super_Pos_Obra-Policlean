@@ -7,7 +7,7 @@ const SectionWhoIsPO = () => {
     <section className="section-who-is-po" id="quem-e-a-policlean-oirad">
       <div className="wrapper">
         <div className="aside-image">
-          <img src={Logo} alt="" />
+          <img src={Logo} alt="Logo Empresa 100% Brasileira desde 1965" />
         </div>
         <div className="container">
           <h2 className="title">Quem é a Policlean Oirad</h2>

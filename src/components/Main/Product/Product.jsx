@@ -33,7 +33,7 @@ const Product = () => {
         <div className="containers">
           <div className="product-images">
             <div className="column">
-              <img src={asideImages} alt="" />
+              <img src={asideImages} alt="Outras imagens do produto" />
             </div>
             <div className="main-image">
               {/* <img

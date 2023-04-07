@@ -50,7 +50,7 @@ const SectionHowToUse = () => {
             <div className="container">
               <div className="dilution-step">
                 <p>Limpeza pesada até</p>
-                <img src={Dilution1} alt="" />
+                <img src={Dilution1} alt="Baltes para diluição" />
                 <div className="numbers">
                   <div className="number">01</div>
                   <div className="number">04</div>
@@ -59,7 +59,7 @@ const SectionHowToUse = () => {
               </div>
               <div className="dilution-step">
                 <p>Limpeza média até</p>
-                <img src={Dilution2} alt="" />
+                <img src={Dilution2} alt="Baltes para diluição" />
                 <div className="numbers">
                   <div className="number">01</div>
                   <div className="number">06</div>
@@ -68,7 +68,7 @@ const SectionHowToUse = () => {
               </div>
               <div className="dilution-step">
                 <p>Limpeza leve até</p>
-                <img src={Dilution3} alt="" />
+                <img src={Dilution3} alt="Baltes para diluição" />
                 <div className="numbers">
                   <div className="number">01</div>
                   <div className="number">10</div>

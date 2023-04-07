@@ -10,7 +10,7 @@ const FooterBottom = () => {
           COPYRIGHT POLICLEAN OIRAD QUÍMICA - 50090646000185 - 2022. TODOS OS
           DIREITOS RESERVADOS
         </p>
-        <img src={LogoAgencia} alt="" />
+        <img src={LogoAgencia} alt="Logo da agencia" />
       </div>
     </div>
   )

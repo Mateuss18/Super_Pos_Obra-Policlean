@@ -44,7 +44,7 @@ const SectionWhatIts = () => {
             </div>
           </div>
           <div className="middle-image">
-            <img src={Product} alt="" />
+            <img src={Product} alt="Imagem do produto" />
           </div>
         </div>
         <div className="features">

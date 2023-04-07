@@ -27,7 +27,10 @@ const FooterTop = () => {
       <div className="wrapper">
         <div className="columns">
           <div className="col-1">
-            <img src={LogoPolicleanOiradQuimica} alt="" />
+            <img
+              src={LogoPolicleanOiradQuimica}
+              alt="Logo Policlean Oirad Quimica"
+            />
             <p className="slogan">
               Fácil assim, limpeza é <span>Policlean!</span>
             </p>
@@ -40,7 +43,7 @@ const FooterTop = () => {
                 <BsYoutube size={'45px'} />
               </div>
             </div>
-            <img src={LogoEureciclo} alt="" />
+            <img src={LogoEureciclo} alt="Logo Eureciclo" />
           </div>
           <div className="lists">
             <ul className="list-1 list">
@@ -148,9 +151,9 @@ const FooterTop = () => {
             <div className="delivery-types">
               <p className="title">Formas de envio</p>
               <div className="deliveries">
-                <img src={Correios} alt="" />
-                <img src={Pac} alt="" />
-                <img src={Sedex} alt="" />
+                <img src={Correios} alt="Icone Correios" />
+                <img src={Pac} alt="Icone Pac" />
+                <img src={Sedex} alt="Icone Sedex" />
               </div>
             </div>
           </div>
@@ -159,7 +162,7 @@ const FooterTop = () => {
         <div className="security-seals">
           <div className="title">Selos de segurança</div>
           <div className="stamps">
-            <img src={SecuritySeals} alt="" />
+            <img src={SecuritySeals} alt="Selos de segurança" />
           </div>
         </div>
       </div>

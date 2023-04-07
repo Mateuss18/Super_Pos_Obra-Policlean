@@ -20,7 +20,7 @@ const SectionDescription = () => {
         </div>
         <div className="precautions-container">
           <div className="aside-image">
-            <img src={LuvasImg} alt="" />
+            <img src={LuvasImg} alt="Imagem de luvas de enfermagem" />
             <div className="circle"></div>
           </div>
           <div className="precautions">
@@ -34,10 +34,10 @@ const SectionDescription = () => {
               durante vários minutos.
             </p>
             <div className="precautions-images">
-              <img src={GlovesImg} alt="" />
-              <img src={BootsImg} alt="" />
-              <img src={GlassImg} alt="" />
-              <img src={MaskImg} alt="" />
+              <img src={GlovesImg} alt="Icone luvas de proteção" />
+              <img src={BootsImg} alt="Icone botas de proteção" />
+              <img src={GlassImg} alt="Icone oculos de proteção" />
+              <img src={MaskImg} alt="Icone mascara de proteção" />
             </div>
             <p>
               Conserve o produto fora do alcance de crianças e animais
