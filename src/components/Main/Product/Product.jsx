@@ -104,7 +104,7 @@ const Product = () => {
                 <b>Frete e prazo de entrega</b>
               </div>
               <form className="shipping-input" action="">
-                <input type="number" placeholder="Insira o CEP" />
+                <input type="number" placeholder="Insira seu CEP" />
                 <button className="btn submit" type="submit">
                   Calcular
                 </button>
