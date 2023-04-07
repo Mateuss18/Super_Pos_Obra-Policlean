@@ -1,0 +1,32 @@
+.section-explanation {
+  background: center / cover no-repeat url(./assets/185513521_l.png);
+
+  .wrapper {
+    padding-block: 80px;
+
+    .container {
+      background: #fff;
+      color: #004c98;
+      border-radius: 8px;
+      padding: 80px;
+      width: 48%;
+
+      .question {
+        h2 {
+          color: #004c98;
+          font-weight: 600;
+          font-size: 32px;
+          margin-bottom: 40px;
+        }
+
+        p {
+          margin-bottom: 90px;
+        }
+
+        &:nth-child(2) p {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
