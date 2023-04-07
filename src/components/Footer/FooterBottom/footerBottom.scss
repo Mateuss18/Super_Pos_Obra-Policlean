@@ -1,0 +1,17 @@
+.footer-bottom {
+  .wrapper {
+    padding-block: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-weight: 500;
+      color: #43bbee;
+    }
+
+    img {
+      width: 150px;
+    }
+  }
+}
