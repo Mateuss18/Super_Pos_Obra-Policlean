@@ -1,3 +1,5 @@
+@use "../../../styles/mixins.scss";
+
 .footer-top {
   background: #004c98;
   color: #fff;
@@ -20,7 +22,17 @@
     .columns {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-evenly;
+      gap: 40px;
+
+      @include mixins.laptop-G {
+        gap: 70px;
+      }
+
+      @include mixins.laptop {
+        flex-direction: column;
+        align-items: center;
+      }
 
       .col-1 {
         display: flex;
@@ -30,6 +42,10 @@
         img:nth-child(1) {
           width: 260px;
           margin-bottom: 40px;
+
+          @include mixins.mobile-G {
+            width: 220px;
+          }
         }
 
         img:last-child {
@@ -63,6 +79,10 @@
             padding: 12px 16px;
             border: solid 1px #fff;
             border-radius: 8px;
+
+            @include mixins.mobile-G {
+              padding: 8px 12px;
+            }
           }
         }
       }
@@ -70,11 +90,23 @@
       .lists {
         display: flex;
 
+        @include mixins.laptop-G {
+          text-align: center;
+          flex-direction: column;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 40px;
+        }
+
         .list {
           display: flex;
           flex-direction: column;
           gap: 17px;
           width: 298px;
+
+          @include mixins.mobile-G {
+            width: fit-content;
+          }
 
           &-1 {
             li:last-child a {
@@ -86,20 +118,45 @@
           &-3 {
             width: 350px;
 
+            @include mixins.laptop-G {
+              width: fit-content;
+              text-align: center;
+            }
+
             li a {
               display: flex;
               align-items: center;
               gap: 20px;
+
+              @include mixins.laptop-G {
+                justify-content: center;
+              }
+
+              @include mixins.mobile-G {
+                gap: 15px;
+                flex-wrap: wrap;
+              }
             }
           }
         }
 
         li a {
           color: #ececec;
+
+          @include mixins.mobile-G {
+            font-size: 14px;
+          }
         }
       }
 
       .col-3 {
+        @include mixins.laptop-G {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+        }
+
         .title {
           margin-bottom: 15px;
         }
@@ -110,6 +167,10 @@
           gap: 8px;
           width: 210px;
           margin-bottom: 20px;
+
+          @include mixins.laptop {
+            justify-content: center;
+          }
         }
 
         .deliveries {
@@ -119,6 +180,11 @@
           img {
             width: 75px;
             height: 40px;
+
+            @include mixins.mobile-G {
+              width: 60px;
+              height: 32px;
+            }
           }
         }
       }
@@ -139,6 +205,10 @@
 
       img {
         width: 340px;
+
+        @include mixins.mobile-G {
+          width: 250px;
+        }
       }
     }
   }

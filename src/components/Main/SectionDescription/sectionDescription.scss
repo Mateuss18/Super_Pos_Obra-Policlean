@@ -1,3 +1,5 @@
+@use "../../../styles/mixins.scss";
+
 .section-description {
   background: #83bdd6;
 
@@ -7,6 +9,10 @@
       font-weight: 600;
       font-size: 32px;
       text-align: center;
+
+      @include mixins.tablet {
+        font-size: 26px;
+      }
     }
 
     .description {
@@ -19,10 +25,20 @@
       gap: 100px;
       padding: 70px 0;
 
+      @include mixins.tablet {
+        padding: 70px 30px;
+        gap: 50px;
+      }
+
       ul {
         color: #004c98;
         list-style-type: disc;
         padding-bottom: 30px;
+
+        @include mixins.tablet {
+          padding-bottom: 0;
+          font-size: 14px;
+        }
       }
     }
 
@@ -32,11 +48,19 @@
       justify-content: center;
       gap: 18%;
 
+      @include mixins.laptop-G {
+        flex-direction: column-reverse;
+      }
+
       .aside-image {
         position: relative;
         width: 35%;
         left: 120px;
         z-index: 1;
+
+        @include mixins.laptop-G {
+          left: 0;
+        }
 
         .circle {
           position: absolute;
@@ -63,6 +87,18 @@
         justify-content: center;
         align-items: start;
         width: 36%;
+        margin: 40px 0;
+
+        @include mixins.laptop-G {
+          margin: 80px 0 20px 0;
+          width: 70%;
+          text-align: center;
+          align-items: center;
+        }
+
+        @include mixins.tablet {
+          width: 100%;
+        }
 
         h2 {
           margin-bottom: 45px;
@@ -70,6 +106,10 @@
 
         p {
           color: #efefef;
+
+          @include mixins.tablet {
+            font-size: 14px;
+          }
         }
 
         &-images {
@@ -79,8 +119,21 @@
           margin: 25px 0;
           width: 100%;
 
+          @include mixins.laptop-G {
+            justify-content: center;
+          }
+
           img {
             max-height: 115px;
+
+            @include mixins.laptop-G {
+              height: auto;
+              width: 100px;
+            }
+
+            @include mixins.tablet {
+              width: 60px;
+            }
           }
         }
       }

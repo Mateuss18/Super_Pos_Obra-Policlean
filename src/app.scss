@@ -1,3 +1,5 @@
+@use "./styles/mixins.scss";
+
 * {
   padding: 0;
   margin: 0;
@@ -33,6 +35,15 @@ a {
   font-size: 20px;
   height: 70px;
   letter-spacing: 0.3px;
+  transition: 400ms;
+
+  @include mixins.laptop {
+    height: 55px;
+  }
+
+  @include mixins.mobile-G {
+    font-size: 16px;
+  }
 }
 
 input::-webkit-outer-spin-button,

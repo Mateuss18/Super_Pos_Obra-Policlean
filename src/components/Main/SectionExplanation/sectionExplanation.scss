@@ -1,3 +1,5 @@
+@use "../../../styles/mixins.scss";
+
 .section-explanation {
   background: center / cover no-repeat url(./assets/185513521_l.png);
 
@@ -11,16 +13,34 @@
       padding: 80px;
       width: 48%;
 
+      @include mixins.laptop {
+        width: 100%;
+      }
+
+      @include mixins.mobile-G {
+        padding: 20px;
+        text-align: center;
+      }
+
       .question {
         h2 {
           color: #004c98;
           font-weight: 600;
           font-size: 32px;
           margin-bottom: 40px;
+
+          @include mixins.tablet {
+            font-size: 26px;
+          }
         }
 
         p {
           margin-bottom: 90px;
+
+          @include mixins.tablet {
+            font-size: 14px;
+            margin-bottom: 40px;
+          }
         }
 
         &:nth-child(2) p {

@@ -1,3 +1,5 @@
+@use "../../../styles/mixins.scss";
+
 .footer-bottom {
   .wrapper {
     padding-block: 20px;
@@ -5,9 +7,20 @@
     justify-content: space-between;
     align-items: center;
 
+    @include mixins.laptop {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      gap: 15px;
+    }
+
     p {
       font-weight: 500;
       color: #43bbee;
+
+      @include mixins.mobile-G {
+        font-size: 14px;
+      }
     }
 
     img {

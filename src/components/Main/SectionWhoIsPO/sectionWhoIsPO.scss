@@ -1,3 +1,5 @@
+@use "../../../styles/mixins.scss";
+
 .section-who-is-po {
   background: #004c98;
 
@@ -7,8 +9,21 @@
     justify-content: center;
     gap: 10%;
 
+    @include mixins.tablet {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 50px;
+      width: 100%;
+      text-align: center;
+    }
+
     .aside-image {
       width: fit-content;
+
+      @include mixins.laptop-G {
+        display: flex;
+        align-items: center;
+      }
 
       img {
         width: 100%;
@@ -18,11 +33,19 @@
     .container {
       width: 52.1%;
 
+      @include mixins.tablet {
+        width: 100%;
+      }
+
       .title {
         font-weight: 700;
         font-size: 32px;
         color: #fff;
         margin-bottom: 30px;
+
+        @include mixins.tablet {
+          font-size: 26px;
+        }
       }
 
       .description {
@@ -32,6 +55,10 @@
 
         p {
           color: #e2e2e2;
+
+          @include mixins.tablet {
+            font-size: 14px;
+          }
         }
       }
     }
