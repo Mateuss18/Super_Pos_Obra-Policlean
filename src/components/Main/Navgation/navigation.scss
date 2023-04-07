@@ -1,0 +1,39 @@
+nav {
+  .wrapper {
+    padding-block: 45px 91px;
+
+    .naviagation {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .btn-a {
+        height: 125px;
+        width: 311px;
+        border: solid 1.9px #0c549d;
+        border-radius: 8px;
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          font-size: 28px;
+          font-weight: 800;
+          text-align: center;
+          color: #0c549d;
+          padding-inline: 29px;
+          transition: 400ms;
+
+          &:hover {
+            transition: 400ms;
+            background-color: #0c549d;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
