@@ -1,0 +1,205 @@
+.section-how-to-use {
+  background: #83bdd6;
+
+  .wrapper {
+    padding-block: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      color: #004c98;
+      font-weight: 600;
+      font-size: 32px;
+      text-align: center;
+    }
+
+    .how-use {
+      .steps {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 55px 22px;
+        margin-top: 85px;
+
+        .step {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 80px 20px 40px 20px;
+          background-color: #004c98;
+          border-radius: 12px;
+          width: 310px;
+          position: relative;
+
+          &-number {
+            font-size: 42px;
+            font-weight: 700;
+            background-color: #fff;
+            color: #004c98;
+            border-radius: 50%;
+            width: 87px;
+            height: 87px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 150px;
+          }
+
+          p {
+            color: #fff;
+            font-weight: 600;
+            font-size: 17px;
+            text-align: center;
+            line-height: 24px;
+            height: 72px;
+          }
+        }
+      }
+    }
+
+    .dilution {
+      margin-top: 90px;
+      border: solid 2px #004c98;
+      border-radius: 8px;
+      padding: 35px 40px;
+
+      &-steps {
+        h2 {
+          background: #83bdd6;
+          margin: 0 auto;
+          width: 250px;
+          text-align: center;
+          position: relative;
+          bottom: 55px;
+        }
+
+        .titles {
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 20px;
+
+          p {
+            color: #004c98;
+            font-weight: 600;
+            font-size: 24px;
+            text-transform: uppercase;
+            width: max-content;
+
+            &:nth-child(2) {
+              padding-inline: 10%;
+            }
+          }
+        }
+
+        picture {
+          display: flex;
+          justify-content: center;
+          width: 81vw;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .steps-group {
+          display: flex;
+          padding-inline: 80px;
+          gap: 20%;
+
+          .step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            .numbers {
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+              margin-top: 15px;
+
+              .number {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 32px;
+                font-weight: 700;
+                background-color: #fff;
+                color: #004c98;
+                border-radius: 50%;
+                width: 70px;
+                height: 70px;
+              }
+            }
+
+            .liters {
+              margin-top: 30px;
+              padding: 12px 42px;
+              border-radius: 26px;
+              border: solid 1px #fff;
+              color: #fff;
+              font-weight: 600;
+              font-size: 22px;
+            }
+          }
+        }
+      }
+
+      .proportions-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto 20px auto;
+        padding: 12px 95px;
+        width: fit-content;
+        border: solid 2px #004c98;
+        color: #004c98;
+        font-weight: 600;
+        font-size: 24px;
+        text-transform: uppercase;
+        border-radius: 34px;
+
+        .title {
+          margin-right: 50px;
+        }
+
+        .proportions {
+          display: flex;
+          gap: 60px;
+
+          .proportion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+
+            .circle {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: #e23968;
+            }
+
+            &:nth-child(2) .circle {
+              background-color: #00e2ea;
+            }
+          }
+        }
+      }
+    }
+
+    .after-clean {
+      margin: 70px auto 0 auto;
+
+      p {
+        margin-top: 55px;
+        color: #fff;
+        width: 840px;
+        text-align: center;
+      }
+    }
+  }
+}
