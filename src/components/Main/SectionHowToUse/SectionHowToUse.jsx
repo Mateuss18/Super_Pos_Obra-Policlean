@@ -1,5 +1,8 @@
 import React from 'react'
-import dilutionImage from './assets/teste.png'
+import Dilution1 from './assets/diluicao-1.png'
+import Dilution2 from './assets/diluicao-2.png'
+import Dilution3 from './assets/diluicao-3.png'
+
 import './sectionHowToUse.scss'
 
 const SectionHowToUse = () => {
@@ -45,36 +48,32 @@ const SectionHowToUse = () => {
           <div className="dilution-steps">
             <h2>Diluição</h2>
             <div className="container">
-              <div className="titles">
+              <div className="dilution-step">
                 <p>Limpeza pesada até</p>
-                <p>Limpeza média até</p>
-                <p>Limpeza leve até</p>
+                <img src={Dilution1} alt="" />
+                <div className="numbers">
+                  <div className="number">01</div>
+                  <div className="number">04</div>
+                </div>
+                <div className="liters">250ml/L</div>
               </div>
-              <picture>
-                <img src={dilutionImage} alt="" />
-              </picture>
-              <div className="steps-group">
-                <div className="step">
-                  <div className="numbers">
-                    <div className="number">01</div>
-                    <div className="number">04</div>
-                  </div>
-                  <div className="liters">250ml/L</div>
+              <div className="dilution-step">
+                <p>Limpeza média até</p>
+                <img src={Dilution2} alt="" />
+                <div className="numbers">
+                  <div className="number">01</div>
+                  <div className="number">06</div>
                 </div>
-                <div className="step">
-                  <div className="numbers">
-                    <div className="number">01</div>
-                    <div className="number">06</div>
-                  </div>
-                  <div className="liters">166ml/L</div>
+                <div className="liters">166ml/L</div>
+              </div>
+              <div className="dilution-step">
+                <p>Limpeza leve até</p>
+                <img src={Dilution3} alt="" />
+                <div className="numbers">
+                  <div className="number">01</div>
+                  <div className="number">10</div>
                 </div>
-                <div className="step">
-                  <div className="numbers">
-                    <div className="number">01</div>
-                    <div className="number">10</div>
-                  </div>
-                  <div className="liters">100ml/L</div>
-                </div>
+                <div className="liters">100ml/L</div>
               </div>
             </div>
           </div>

@@ -1,3 +1,5 @@
+@use "../../../styles/mixins.scss";
+
 .section-how-to-use {
   background: #83bdd6;
 
@@ -12,6 +14,10 @@
       font-weight: 600;
       font-size: 32px;
       text-align: center;
+
+      @include mixins.laptop {
+        font-size: 26px;
+      }
     }
 
     .how-use {
@@ -32,6 +38,11 @@
           width: 310px;
           position: relative;
 
+          @include mixins.laptop {
+            padding: 50px 20px 40px 20px;
+            width: 295px;
+          }
+
           &-number {
             font-size: 42px;
             font-weight: 700;
@@ -45,6 +56,13 @@
             justify-content: center;
             position: absolute;
             bottom: 150px;
+
+            @include mixins.laptop {
+              bottom: 130px;
+              font-size: 26px;
+              width: 65px;
+              height: 65px;
+            }
           }
 
           p {
@@ -64,6 +82,19 @@
       border: solid 2px #004c98;
       border-radius: 8px;
       padding: 35px 40px;
+      width: 100%;
+
+      @include mixins.laptop-G {
+        width: min-content;
+      }
+
+      @include mixins.tablet {
+        padding: 35px 22px;
+      }
+
+      @include mixins.mobile-G {
+        padding: 12px;
+      }
 
       &-steps {
         h2 {
@@ -73,53 +104,71 @@
           text-align: center;
           position: relative;
           bottom: 55px;
-        }
 
-        .titles {
-          display: flex;
-          justify-content: space-around;
-          margin-bottom: 20px;
-
-          p {
-            color: #004c98;
-            font-weight: 600;
-            font-size: 24px;
-            text-transform: uppercase;
-            width: max-content;
-
-            &:nth-child(2) {
-              padding-inline: 10%;
-            }
+          @include mixins.laptop-G {
+            bottom: 33px;
           }
         }
 
-        picture {
+        .container {
           display: flex;
           justify-content: center;
-          width: 81vw;
+          flex-wrap: wrap;
+          gap: 6.5%;
 
-          img {
-            width: 100%;
+          @include mixins.laptop-G {
+            gap: 50px;
           }
-        }
 
-        .steps-group {
-          display: flex;
-          padding-inline: 80px;
-          gap: 20%;
-
-          .step {
+          .dilution-step {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
+            gap: 20px;
+
+            @include mixins.laptop {
+              gap: 10px;
+            }
+
+            p {
+              color: #004c98;
+              font-weight: 600;
+              font-size: 24px;
+              text-transform: uppercase;
+              text-align: center;
+
+              @include mixins.laptop {
+                font-size: 18px;
+                text-align: center;
+              }
+
+              &:nth-child(2) {
+                padding-inline: 10%;
+              }
+            }
+
+            img {
+              width: 450px;
+
+              @include mixins.laptop-G {
+                width: 280px;
+              }
+
+              @include mixins.mobile-G {
+                width: 200px;
+              }
+            }
 
             .numbers {
               display: flex;
-              justify-content: space-between;
+              justify-content: center;
+              gap: 30%;
               width: 100%;
               margin-top: 15px;
+
+              @include mixins.laptop {
+                margin-top: 0;
+                gap: 20%;
+              }
 
               .number {
                 display: flex;
@@ -132,17 +181,27 @@
                 border-radius: 50%;
                 width: 70px;
                 height: 70px;
+
+                @include mixins.laptop {
+                  font-size: 22px;
+                }
               }
             }
 
             .liters {
-              margin-top: 30px;
+              margin: 15px auto 0 auto;
               padding: 12px 42px;
               border-radius: 26px;
               border: solid 1px #fff;
               color: #fff;
               font-weight: 600;
               font-size: 22px;
+              text-align: center;
+              width: fit-content;
+
+              @include mixins.laptop {
+                font-size: 20px;
+              }
             }
           }
         }
@@ -162,13 +221,39 @@
         text-transform: uppercase;
         border-radius: 34px;
 
+        @include mixins.laptop {
+          font-size: 18px;
+          width: 100%;
+          padding: 12px 35px;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+
+        @include mixins.mobile-G {
+          padding: 10px;
+        }
+
         .title {
           margin-right: 50px;
+
+          @include mixins.laptop {
+            margin: 12px 0 0 0;
+          }
+
+          @include mixins.tablet {
+            font-size: 16px;
+            margin-right: 20px;
+          }
         }
 
         .proportions {
           display: flex;
           gap: 60px;
+
+          @include mixins.laptop {
+            gap: 30px;
+            margin-bottom: 12px;
+          }
 
           .proportion {
             display: flex;
@@ -176,11 +261,25 @@
             align-items: center;
             gap: 16px;
 
+            @include mixins.tablet {
+              font-size: 16px;
+            }
+
             .circle {
               width: 40px;
               height: 40px;
               border-radius: 50%;
               background-color: #e23968;
+
+              @include mixins.laptop {
+                width: 30px;
+                height: 30px;
+              }
+
+              @include mixins.tablet {
+                width: 22px;
+                height: 22px;
+              }
             }
 
             &:nth-child(2) .circle {
@@ -199,6 +298,11 @@
         color: #fff;
         width: 840px;
         text-align: center;
+
+        @include mixins.laptop {
+          font-size: 14px;
+          width: 100%;
+        }
       }
     }
   }
