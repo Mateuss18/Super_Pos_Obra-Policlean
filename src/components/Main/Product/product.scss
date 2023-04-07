@@ -1,11 +1,19 @@
+@use "../../../styles/mixins.scss";
+
 .product-section {
   .wrapper {
     padding-block: 21px;
 
     .breadcrumb ul {
       display: flex;
+      align-items: center;
       gap: 3px;
       margin-top: 10px;
+
+      @include mixins.tablet {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
 
       li {
         font-size: 10px;
@@ -26,13 +34,35 @@
       display: flex;
       justify-content: space-between;
 
+      @include mixins.tablet {
+        flex-direction: column;
+        gap: 20px;
+      }
+
       .product-images {
         display: flex;
         gap: 13px;
         width: 57%;
 
+        @include mixins.tablet {
+          width: 100%;
+          height: 550px;
+        }
+
+        @include mixins.mobile-G {
+          height: 420px;
+        }
+
         .column {
           height: 100%;
+
+          @include mixins.laptop-G {
+            height: 60%;
+          }
+
+          @include mixins.laptop {
+            display: none;
+          }
 
           img {
             height: 100%;
@@ -46,10 +76,22 @@
           position: relative;
           background: center / contain no-repeat url(./assets/mockup_super_pos_obra_principal_5l.png);
 
+          @include mixins.mobile-G {
+            background-size: 360px;
+          }
+
           .stamp {
             position: absolute;
             width: 150px;
             right: 10px;
+
+            @include mixins.laptop {
+              width: 90px;
+            }
+
+            @include mixins.mobile-G {
+              width: 70px;
+            }
 
             &:first-of-type {
               top: 15px;
@@ -57,6 +99,14 @@
 
             &:last-of-type {
               top: 175px;
+
+              @include mixins.laptop {
+                top: 110px;
+              }
+
+              @include mixins.mobile-G {
+                top: 90px;
+              }
             }
           }
 
@@ -90,18 +140,36 @@
         flex-direction: column;
         align-items: center;
 
+        @include mixins.tablet {
+          width: 100%;
+        }
+
+        @include mixins.mobile-G {
+          padding: 16px;
+        }
+
         .desc {
           .product-name {
             margin: 15px 0;
+            text-align: center;
             text-transform: uppercase;
             font-size: 24px;
             color: #949798;
             font-weight: 500;
+
+            @include mixins.laptop {
+              font-size: 20px;
+            }
           }
 
           .product-code {
             color: #838586;
             margin-bottom: 20px;
+
+            @include mixins.laptop {
+              font-size: 12px;
+              margin-bottom: 15px;
+            }
           }
 
           .rate-now {
@@ -109,6 +177,10 @@
             color: #838586;
             margin-bottom: 15px;
             font-size: 14px;
+
+            @include mixins.laptop {
+              font-size: 12px;
+            }
 
             b {
               font-weight: 700;
@@ -127,6 +199,18 @@
           width: 100%;
           padding: 0 40px;
 
+          @include mixins.laptop-G {
+            padding: 0 20px;
+          }
+
+          @include mixins.tablet {
+            padding: 0 20%;
+          }
+
+          @include mixins.mobile-G {
+            padding: 0 5%;
+          }
+
           .btn {
             color: #fff;
           }
@@ -135,6 +219,16 @@
             font-size: 48px;
             font-weight: 700;
             margin: 25px 0 10px 0;
+
+            @include mixins.laptop {
+              font-size: 44px;
+            }
+          }
+
+          .pay-in {
+            @include mixins.mobile-G {
+              text-align: center;
+            }
           }
 
           .buy-container {
@@ -142,6 +236,11 @@
             gap: 15px;
             margin-top: 20px;
             width: 100%;
+
+            @include mixins.laptop {
+              justify-content: center;
+              flex-wrap: wrap;
+            }
 
             .amount {
               display: flex;
@@ -151,13 +250,32 @@
               padding: 22px 24px;
               gap: 30px;
 
+              @include mixins.laptop {
+                justify-content: space-evenly;
+                padding: 16px 22px;
+                width: 100%;
+              }
+
+              @include mixins.mobile-G {
+                padding: 16px 16px;
+              }
+
               span {
                 font-size: 20px;
+
+                @include mixins.laptop {
+                  font-size: 16px;
+                }
               }
             }
 
             .buy-btn {
               background-color: #59c00b;
+
+              &:hover {
+                background-color: #51a60f;
+                transition: 500ms;
+              }
             }
           }
 
@@ -172,11 +290,24 @@
             font-size: 13px;
             font-weight: 500;
             color: #59c00b;
+
+            @include mixins.laptop {
+              font-size: 12px;
+            }
+
+            @include mixins.mobile-G {
+              padding-right: 0;
+            }
           }
 
           .resale-btn {
             background-color: #004c98;
             margin-bottom: 25px;
+
+            &:hover {
+              background-color: #003971;
+              transition: 500ms;
+            }
           }
         }
 
@@ -189,8 +320,17 @@
             gap: 10px;
             margin: 15px 0 15px 0;
 
+            @include mixins.mobile-G {
+              justify-content: center;
+            }
+
             b {
               font-size: 18px;
+
+              @include mixins.mobile-G {
+                font-size: 14px;
+                display: flex;
+              }
             }
           }
 
@@ -201,16 +341,38 @@
             margin-bottom: 20px;
 
             input {
+              width: 100%;
               border: none;
               padding-left: 25px;
               font-size: 16px;
+
+              @include mixins.mobile-G {
+                font-size: 14px;
+                padding-left: 16px;
+              }
             }
 
             .submit {
               font-size: 16px;
               background: #fff;
-              padding-left: 35px;
-              padding-right: 35px;
+              padding-left: 30px;
+              padding-right: 30px;
+
+              &:hover {
+                background-color: #eeeeee;
+                transition: 400ms;
+              }
+
+              @include mixins.laptop {
+                padding-left: 15px;
+                padding-right: 15px;
+              }
+
+              @include mixins.mobile-G {
+                font-size: 14px;
+                padding-left: 0;
+                padding-right: 5px;
+              }
             }
           }
 
@@ -220,6 +382,10 @@
             thead {
               th {
                 background-color: #dedede;
+
+                @include mixins.laptop {
+                  font-size: 14px;
+                }
               }
             }
 
@@ -241,6 +407,10 @@
 
               td {
                 font-weight: 500;
+
+                @include mixins.laptop {
+                  font-size: 12px;
+                }
               }
 
               .upper {
