@@ -1,0 +1,39 @@
+.section-who-is-po {
+  background: #004c98;
+
+  .wrapper {
+    padding-block: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+
+    .aside-image {
+      width: fit-content;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .container {
+      width: 52.1%;
+
+      .title {
+        font-weight: 700;
+        font-size: 32px;
+        color: #fff;
+        margin-bottom: 30px;
+      }
+
+      .description {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        p {
+          color: #e2e2e2;
+        }
+      }
+    }
+  }
+}
