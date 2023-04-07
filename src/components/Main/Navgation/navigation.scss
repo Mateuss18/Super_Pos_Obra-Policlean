@@ -1,3 +1,5 @@
+@use "../../../styles/mixins.scss";
+
 nav {
   .wrapper {
     padding-block: 45px 91px;
@@ -14,6 +16,11 @@ nav {
         border: solid 1.9px #0c549d;
         border-radius: 8px;
 
+        @include mixins.laptop {
+          height: 110px;
+          width: 250px;
+        }
+
         a {
           display: flex;
           justify-content: center;
@@ -26,6 +33,10 @@ nav {
           color: #0c549d;
           padding-inline: 29px;
           transition: 400ms;
+
+          @include mixins.laptop {
+            font-size: 24px;
+          }
 
           &:hover {
             transition: 400ms;
